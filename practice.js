@@ -4,7 +4,12 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
+var me = new Object();
 
+me.name = 'Nick';
+me.age = 33;
+
+alert(me.name);
 
 
 
@@ -18,9 +23,17 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
+var favoriteThings = {
+	band: 'AC/DC',
+	food: 'Chicken pillows',
+	person: 'Steve Young',
+	book: 'Enders Game',
+	movie: 'Monty Pythons Quest for the Holy Grail',
+	holiday: 'Christmas'
+}
 
-
-
+favoriteThings.car = '68 Chevy Camaro';
+favoriteThings.brand = 'Adidas';
 
 
 
@@ -37,7 +50,8 @@
 
   //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 
@@ -57,7 +71,15 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+var backPack = {
+	
+}
 
+var item = 'firstPocket';
+
+backPack.item = 'chapstick';
+
+backPack.color = 'blue';
 
 
 
@@ -66,7 +88,7 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
- 
+ alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -76,7 +98,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
 
-
+console.log(backPack);
 
 
 
@@ -98,7 +120,8 @@ var user2 = {
 
   //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
