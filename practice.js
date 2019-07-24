@@ -7,7 +7,7 @@
 var me = new Object();
 
 me.name = 'Nick';
-me.age = 33;
+me.age = 35;
 
 alert(me.name);
 
@@ -141,7 +141,16 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Create an empty object called methodCollection.
 
-  //Code Here
+  var methodCollection = {
+    alertHello: function() {
+      alert('hello')
+    },
+    logHello: function() {
+      console.log('hello')
+    }
+  };
+
+
 
 
 
@@ -160,7 +169,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 //Now call your alertHello and logHello methods.
 
-  //Code Here
+methodCollection.alertHello;
+methodCollection.logHello;
 
 
 
@@ -176,7 +186,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makePerson which takes in name, birthday, ssn as its
 // parameters and returns a new object with all of the information that you passed in.
 
-  //Code Here
+  function makePerson(name, birthday, ssn) {
+    var obj = {
+      'name': name,
+      'birthday': birthday,
+      'ssn': ssn
+    };
+    return obj;
+  }
 
 
 
@@ -189,8 +206,25 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-// Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
+// Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to 
+// make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
-  //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  var min = 3999999999999999;
+  var max = 5000000000000000;
+  var min1 = 1;
+  var max1 = 13;
+  var min2 = 100;
+  var max2 = 1000;
+  var year = "/22";
+  var creditCard = {
+    cardNumber: Math.floor(random() * (max - min) + min),
+    expirationDate: Math.floor(Math.random() * (max1 - min1)) + min1 + year,
+    securityCode: Math.floor(Math.random() * (max2 - min2)) + min2
+  };
+  return creditCard;
+}
+
+makeCard();
 
 
